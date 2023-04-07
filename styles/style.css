@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+
+/* styles for mobile */
+
+body {
+    background: #FAF8F6;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 84px;
+}
+.header-btn {
+    width: 182px;
+    height: 48px;
+    border: 1px solid #172339;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #172339;
+    letter-spacing: -0.14px;
+}
+main {
+    width: 100%;
+}
+.pattern {
+    width: 152px;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+}
+.pattern img {
+    width: 100%;
+}
+.beta , .info , .mini-box , .about-company , .name , footer , main , .feedback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.beta {
+    position: relative;
+}
+h1 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.52px;
+    color: #172339;
+    width: 342px;
+}
+h1 span {
+    font-weight: bolder;
+}
+.description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.08px;
+    color: #49566D;
+    width: 342px;
+    margin: 32px 0 32px 0;
+}
+.beta-btn {
+    width: 256px;
+    height: 60px;
+    background: #172339;
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    color: #FAF8F6;
+    margin: 0 88px 56px 0;
+    transition: background 0.8s ease-in-out;
+}
+.mobile-img {
+    width: 342px;
+    height: 240px;
+    background-image: url(../starter-code/assets/image-hero-landscape.webp);
+}
+.info {
+    gap: 32px;
+    margin: 56px 0 246px 0;
+}
+.mini-box p {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #172339;
+}
+.mini-box span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2.5px;
+    color: #49566D;
+}
+.leads span {
+    margin-left: 8px;
+}
+.about-company {
+    width: 100%;
+    height: 748px;
+    background: #172339;
+    border-radius: 15px;
+    position: relative;
+    padding-top: 338px;
+    background-image: url(../starter-code/assets/pattern-blur.svg);
+    background-repeat: no-repeat;
+    background-position: top -70px center;
+    background-size: 280px;
+}
+.customer{
+    position: absolute;
+    top: -180px;
+    left: calc(50% - 121px) ;
+}
+.customer-desktop {
+    display: none;
+}
+.pattern2 {
+    position: absolute;
+    top: 260px;
+    left: calc(50% - 20px);
+}
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.42px;
+    color: #FAF8F6;
+}
+.rate-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.09px;
+    color: #F3EDE7;
+    width: 342px;
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+.name p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    color: #FAF8F6;
+}
+.name span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2.5px;
+    color: #F3EDE7;
+}
+footer {
+    width: 100%;
+    height: 286px;
+    padding-top: 56px;
+}
+footer p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.08px;
+    color: #49566D;
+    margin: 32px;
+}
+.media-icons {
+    display: flex;
+    gap: 28px;
+}
+.media-icons img {
+    object-fit: none;
+}
+
+
+/* syyles for tablet */
+
+@media only screen and (min-width: 768px) {
+    header {
+        gap: 390px;
+    }
+    .pattern {
+        width: 230px;
+        height: 30px;
+        top: 50px;
+        left: 230px;
+    }
+    h1 {
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: -0.78px;
+        width: 540px;
+        margin-top: 88px;
+    }
+    .beta {
+        width: 690px;
+        height: 650px;
+        align-items: flex-start;
+        position: relative;
+        margin-bottom: 272px;
+    }
+    .beta-btn {
+        margin: 0 0 128px 0;
+    }
+    .description {
+        margin: 40px 0 40px 0;
+    }
+    .mobile-img {
+        width: 282px;
+        height: 480px;
+        background-image: url(../starter-code/assets/image-hero-portrait.webp);
+        background-size: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .info {
+        flex-direction: row;
+        gap: 130px;
+        margin: 0;
+    }
+    .about-company {
+        width: 690px;
+        height: 684px;
+        background-size: 340px;
+    }
+    .rate-text {
+        width: 572px;
+    }
+    footer {
+        height: 176px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 150px;
+    }
+}
+
+
+/* styles for desktop */
+
+
+@media only screen and (min-width: 1440px) {
+    header {
+        gap: 810px;
+    }
+    .header-btn:hover {
+        background: #172339;
+        color: #FAF8F6;
+        cursor: pointer;
+        transition: 0.8s ;
+    }
+    .pattern {
+        width: 288px;
+        height: 36px;
+        top: 40px;
+        left: 270px;
+    }
+    .beta {
+        width: 824px;
+        height: 600px;
+        position: relative;
+        margin-right: 250px;
+    }
+    .beta-btn:hover {
+        background: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
+        cursor: pointer;
+    }
+    h1 {
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 78px;
+        letter-spacing: -1px;
+        width: 634px;
+    }
+    .description {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+    }
+    .info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 90px;
+        position: absolute;
+        top: 90px;
+        right: -210px;
+    }
+    .mini-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .mobile-img {
+        width: 350px;
+        height: 600px;
+        background-image: url(../starter-code/assets/image-hero-portrait.webp);
+    }
+    .about-company {
+        width: 1110px;
+        height: 544px;
+        flex-direction: row;
+        background-position: bottom -90px left 50px;
+        background-size: 500px;
+    }
+    .customer {
+        display: none;
+    }
+    .customer-desktop {
+        display: block;
+        position: absolute;
+        top: -46px;
+        left: 112px;
+    }
+    .feedback {
+        align-items: flex-start;
+        position: absolute;
+        top: 88px;
+        left: 634px;
+    }
+    .pattern2 {
+        top: 160px;
+        left: calc(48% - 20px) ;
+    }
+    h2 {
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.5px;
+    }
+    .rate-text {
+        font-size: 20px;
+        line-height: 35px;
+        letter-spacing: 0.1px;
+        width: 350px;
+        text-align: start;
+    }
+    .name {
+        align-items: flex-start;
+    }
+    footer {
+        gap: 330px;
+        margin-bottom: 40px;
+    }
+    .media-icons img:hover {
+        opacity: 0.5;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+}
